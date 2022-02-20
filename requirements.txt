@@ -1,0 +1,4 @@
+disnake>=2.4.0
+dateutils>0.6.0
+toml>=0.10.2
+aiohttp

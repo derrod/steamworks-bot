@@ -52,7 +52,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.version:
-        print(f'OBS Bot version: {__version__} - "{__codename__}"')
+        print(f'Steamboat version: {__version__} - "{__codename__}"')
         exit(0)
 
     if not args.config_file:

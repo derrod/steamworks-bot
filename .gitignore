@@ -132,4 +132,4 @@ dmypy.json
 .idea/
 
 # ignore private cogs
-obsbot/cogs/private/
+data/config.toml

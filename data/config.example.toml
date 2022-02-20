@@ -1,0 +1,28 @@
+[bot]
+token = "<bot token>"
+state_file = "steambot_state.json"
+main_guild = 12345678909876654321
+owner = 12345678909876654321
+admins = [
+	12345678909876654321
+]
+publish_role = 12345678909876654321
+
+[webhooks]
+enabled = true
+port = 8000
+workflow_id = 1234567
+
+[steamworks]
+enabled = true
+api_key = "<steam api key>"
+app_id = 1234567
+required_votes = 2
+admin_override = true
+steam_channel = 12345678909876654321
+repo = "user/repo"
+
+[steamworks.branches]
+# staging -> live branch mapping
+staging = "public"
+

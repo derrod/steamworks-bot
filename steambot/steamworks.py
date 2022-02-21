@@ -141,7 +141,7 @@ class Steamworks(Cog):
                 base_name = commit_info['commit']['message'].partition('\n')[0]
                 base_url = commit_info['html_url']
 
-                embed.add_field(name='Trigger', value='cronjob/manual run')
+                embed.add_field(name='Trigger', value='cronjob/manual run' if not run_data else run_data['event'])
                 embed.description = f'Based on Commit [{base_name}]({base_url})'
             elif run_data and run_data['event'] == 'release':
                 release_tag = run_data['head_branch']

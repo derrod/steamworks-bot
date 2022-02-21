@@ -200,7 +200,7 @@ class Steamworks(Cog):
 
     @command()
     async def update_builds(self, context: Context):
-        if not self.bot.is_contibutor(context.author):
+        if not self.bot.is_contributor(context.author):
             return
         if context.channel != self.steam_channel:
             return
